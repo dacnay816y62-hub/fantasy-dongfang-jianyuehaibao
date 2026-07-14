@@ -75,6 +75,18 @@ $oriental-editorial-poster
 每个主题各做一张，风格要分开，不要重复同一种大字构图。
 ```
 
+## 示例图
+
+这些图用于展示 skill 追求的“文字创意极简 / 材料证据 / 编辑式封面”方向。它们是风格样张，不是固定模板；使用 skill 时应学习它们的图文关系、留白节奏和材料逻辑，而不是复制构图坐标。
+
+|  |  |
+| --- | --- |
+| ![Archive field](examples/example-01-archive-field.png) | ![Type material](examples/example-02-type-material.png) |
+| ![Woodblock study](examples/example-03-woodblock-study.png) | ![Minimal cover](examples/example-04-minimal-cover.png) |
+| ![Pipa](examples/example-05-pipa.png) | ![Taihu stone](examples/example-06-taihu-stone.png) |
+| ![Withered lotus](examples/example-07-withered-lotus.png) | ![Light paper](examples/example-08-light-paper.png) |
+| ![Sea salt](examples/example-09-sea-salt.png) | ![Algorithm](examples/example-10-algorithm.png) |
+
 ## 生成模式
 
 这个 skill 默认要求使用图像生成作为生产步骤。
@@ -106,4 +118,3 @@ $oriental-editorial-poster
 - 本仓库不包含 API key、账号信息或图像生成额度。
 - 参考图用于学习视觉语法，不代表可商用授权。
 - 如果要作为公开 skill 分发，建议保留原文件结构，不要把过程稿、生成图片或临时输出放进仓库。
-
