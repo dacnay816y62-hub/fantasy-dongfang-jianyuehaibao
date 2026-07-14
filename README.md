@@ -77,15 +77,7 @@ $oriental-editorial-poster
 
 ## 示例图
 
-这些图用于展示 skill 追求的“文字创意极简 / 材料证据 / 编辑式封面”方向。它们是风格样张，不是固定模板；使用 skill 时应学习它们的图文关系、留白节奏和材料逻辑，而不是复制构图坐标。
-
-|  |  |
-| --- | --- |
-| ![Archive field](examples/example-01-archive-field.png) | ![Type material](examples/example-02-type-material.png) |
-| ![Woodblock study](examples/example-03-woodblock-study.png) | ![Minimal cover](examples/example-04-minimal-cover.png) |
-| ![Pipa](examples/example-05-pipa.png) | ![Taihu stone](examples/example-06-taihu-stone.png) |
-| ![Withered lotus](examples/example-07-withered-lotus.png) | ![Light paper](examples/example-08-light-paper.png) |
-| ![Sea salt](examples/example-09-sea-salt.png) | ![Algorithm](examples/example-10-algorithm.png) |
+示例图已单独放在 [`examples/`](examples/) 目录，不直接塞进首页 README。它们用于展示“文字创意极简 / 材料证据 / 编辑式封面”的方向，是风格样张，不是固定模板。
 
 ## 生成模式
 
