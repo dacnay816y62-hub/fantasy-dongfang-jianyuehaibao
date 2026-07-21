@@ -1,9 +1,9 @@
 ---
 name: oriental-editorial-poster
-description: "Create finished Chinese cultural, fantasy, and minimalist text-material editorial posters or publication covers with mandatory image generation. Use when a user gives a title, theme, exhibition/brand/cultural content, reference images, short keyword batches, or asks for 文字创意极简, fantasy text-driven visuals, 东方编辑海报, art-book covers, or refined sparse poster tests. Supports Mode A direct creative image posters and Mode B steadier image-generated poster layouts; avoid generic AI Chinese-style posters."
+description: "Create finished Chinese cultural, fantasy, and minimalist text-material editorial posters or publication covers with mandatory Image 2 style image generation. Use when a user gives a title, theme, exhibition/brand/cultural content, reference images, short keyword batches, ABC tests, or asks for 文字创意极简, fantasy text-driven visuals, 东方编辑海报, art-book covers, refined sparse poster tests, or culturally grounded Chinese typography posters. Supports v2 title refinement, real cultural evidence, Mode A direct creative image posters, Mode B steadier complete image-generated poster layouts, and A/B/C comparison batches; avoid generic AI Chinese-style posters."
 ---
 
-# 东方文化编辑海报
+# 东方文化编辑海报 v2
 
 Treat this as a research-and-composition skill with mandatory image generation, not a generic one-prompt “Chinese-style poster” shortcut.
 
@@ -12,6 +12,33 @@ The goal is a contemporary editorial page that uses cultural evidence and materi
 Read [editorial-systems.md](references/editorial-systems.md) before composing.
 
 For short keyword tests, quick batches, "fantasy", "文字创意极简", or outputs intended to match the user-approved sparse text-material examples, also read [fantasy-text-minimal.md](references/fantasy-text-minimal.md). That overlay is the default taste layer for fast 1-6 keyword poster batches: one strong material evidence field, one semantic title action, restrained text, one useful interruptor, no fake small text, and no generic Chinese decoration.
+
+When judging taste or running ABC comparisons, inspect `v2-tests/selected-triptychs/selected-overview.jpg` first. It captures the current approved direction: refined short Chinese titles, a single cultural/material proof, one image-title relationship, and calm editorial space.
+
+## v2 defaults from Image 2 testing
+
+These rules supersede earlier broad "fantasy oriental" tendencies.
+
+- Use Image 2 / image generation for actual poster tests; do not stop at prompt writing when the user asks for output images.
+- Prefer real, recognizable cultural evidence over invented cultural mashups: porcelain, silverwork, lacquer, garden windows, opera costume details, shadow puppets, city wall, grotto stone, archive maps, fabric, paper, waterline, patina, or craft marks.
+- Refine the main Chinese title before prompting. The H1 should usually be 1-4 Chinese characters. Carry the longer topic through evidence, subtitle, English tag, or small copy.
+- Do not over-explain with the title. For example, "徽州天井" can become "天井" when Huizhou is visible through architecture; "景德镇青花" should emphasize "青花瓷" or "青花" rather than forcing every proper noun into the H1.
+- For abstract topics such as 乡愁, 婚姻, or 城市缩影, choose a tangible carrier first: threshold, ring, ledger, map fold, ticket, old wall, road trace, household object, or reflected surface.
+- For place names such as 北京 or 山西大同, avoid landmark collage. Use one local material clue: hutong brick, map edge, wall section, grotto stone, roof ridge, sign shadow, or archival street fragment.
+- Favor finished editorial posters over tourism posters, museum placards, guochao ecommerce graphics, cyberpunk wallpaper, or pure mood images.
+- In batches, evaluate by complete groups, not isolated favorites. A good group has a coherent subject and three clearly different treatments.
+
+## ABC test modes
+
+Use A/B/C only when the user asks for tests, comparisons, or multiple directions.
+
+| Mode | Name | Output logic |
+| --- | --- | --- |
+| **A** | 古图档案介入 | Use archive, rubbing, map, print, old paper, or historical-image logic. The title behaves like an inscription, specimen, crop, or archival interruption. |
+| **B** | 单一物证 | Use one object or material as the visual boss. The title is restrained and the object carries the cultural identity. |
+| **C** | 字体结构实验 | Let the title become a structure, mask, crop-window, relief, section, or frame. Keep it readable and avoid turning the whole subject into a literal giant glyph. |
+
+For a five-topic ABC test, produce 15 images and save matching prompts. Also make a contact sheet or triptych view when the user needs review.
 
 ## Poster-first correction defaults
 
@@ -22,6 +49,7 @@ These defaults override any earlier tendency to make a single clever image.
 - For intangible cultural heritage, city culture, regional identity, exhibitions, festivals, craft subjects, and any multi-character title or topic, default to **Mode B: image-generated poster layout** unless the user explicitly requests Mode A.
 - In Mode B, the image model should generate the complete poster in one image-generation step, including the main title as part of the visual layout. The difference from Mode A is not whether text is generated; it is the text/image weighting: B should reserve a clearer title field, steadier hierarchy, and calmer poster structure, while A may fuse title and image more aggressively.
 - Batch tests should use real topics, phrases, places, crafts, or cultural subjects, not isolated one-character titles, unless the user explicitly requests single-character tests.
+- For test sets, use current, concrete, visually productive topics. Avoid odd invented nouns and false traditions.
 - When a topic is hard to visualise faithfully, choose a conservative editorial layout: strong image crop, clear title block, restrained subtitle, one coherent copy line, and no forced image-text trick.
 
 ## Input contract
@@ -316,11 +344,11 @@ For **Mode B**, the image-generation step must still produce the finished poster
 - Decorative hairlines, dots, circles, registration marks, and grids remain optional. Omit them unless they have a real compositional job.
 - If exact factual text is later required, perform a minimal correction pass after the generated poster exists; that is a finishing fallback, not the definition of Mode B.
 
-## 7B. Legacy editable-layout fallback
+## 7B. Exact-text finishing fallback
 
-For **Mode B**, use a layout-native method—SVG, HTML/CSS, Photoshop, Figma, or another editable composition tool—for all final typography and sourced character layers.
+Use a layout-native method—SVG, HTML/CSS, Photoshop, Figma, or another editable composition tool—only when the user needs exact factual typography, a production-ready file, or corrections after a generated poster exists. This is a finishing fallback, not the default definition of Mode B.
 
-- Keep H1, H2, dates, locations, and all supplied text exact in Mode B.
+- Keep H1, H2, dates, locations, and all supplied text exact in fallback finishing.
 - Use hard crops and deliberate edge pressure; avoid “image left, title right” unless the selected system requires it.
 - Create variation through scale: hero crop, micro-detail, large title, small metadata, and one tiny mark.
 - Replace isolated decorative microtype with one coherent copy block: a supplied sentence, sourced caption, or a short original thematic line tied to the subject. Keep it to roughly 8–35 Chinese characters or 1–3 short lines. If English is included, translate or label the same idea; never add unrelated pseudo-English.
@@ -350,16 +378,16 @@ Mode A rules:
 - Do not use Mode A for long copy, exact metadata, dates, prices, credits, or factual labels.
 - Avoid fake seals, pseudo-Chinese filler, QR codes, invented institutional names, and random small text.
 
-### Mode B: generated base + real typography
+### Mode B: complete image-generated poster layout
 
-Generate a visual base first, then place exact title and metadata in an editable layout.
+Generate the complete poster layout in one image-generation pass, including main title placement, image placement, text reserve, and overall hierarchy. Mode B is calmer and more publication-like than Mode A, but it is still an image-generated poster, not a blank base waiting for pasted typography.
 
 The generated pass may be:
 
-- an original full-poster visual base without final readable typography;
-- an original hero material/object study prompted from the subject and references;
-- an atmospheric paper, silk, rubbing, textile, shadow, grain, or archive-table field;
-- a controlled poster plate that reserves blank zones for later real typography;
+- an original full-poster visual with a clear title zone and readable H1;
+- an original hero material/object study integrated with typography and hierarchy;
+- an atmospheric paper, silk, rubbing, textile, shadow, grain, or archive field that still resolves as a poster;
+- a controlled poster plate with deliberate text reserve and minimal real copy;
 - a generated reinterpretation of user-provided references that changes composition, crop logic, palette, subject behaviour, and reading path enough to avoid copying.
 
 Before generating, write a compact image-generation brief containing:
@@ -377,7 +405,7 @@ Before generating, write a compact image-generation brief containing:
 
 For either mode, append the `composition card` from section 1A to the working brief. The image prompt must explicitly state the primary evidence, title action, dominant axis, amount of empty field, interruptor, palette, and material proof. Reject prompts that only name a style, genre, or mood without defining this visual relationship.
 
-In Mode B, prefer generating a poster base with no readable text, then add H1, H2, metadata, and copy in an editable layout. If the image model generates text, treat it as texture only and replace all important wording with real typesetting.
+In Mode B, do not prefer generating a blank poster base. If the model mangles important wording, perform the exact-text finishing fallback after the generated poster exists, or simplify the title and regenerate.
 
 Never ask the image model to invent factual metadata, museum labels, archival provenance, QR codes, institutional names, or copied classical paintings. In Mode A, generated title-forms are allowed as creative typography; in Mode B, title calligraphy must use real character samples or Song/Ming/Heiti fallback after generation.
 
@@ -389,7 +417,7 @@ Before delivery, verify:
 - The production mode is recorded as A or B in working notes.
 - Any real source imagery is traceable in working notes and used in a deliberate crop/relationship; any generated imagery is clearly treated as generated, not archival evidence.
 - In Mode A, the generated title-form is visually intentional and close enough to the requested core title to be usable; regenerate or switch to B if the core title is wrong, garbled, or unreadable.
-- In Mode B, title glyphs are real samples or explicitly typeset fallback, not synthetic brush characters.
+- In Mode B, the H1 is readable and intentional; when exact factual text is required, corrected title glyphs are real samples or explicitly typeset fallback, not synthetic brush characters.
 - The chosen title-design strategy is not repeating the previous poster's structure unless the user explicitly asked for a series.
 - If a reference was supplied, the result reuses its design logic rather than its positional template; the variation contract changes at least three structural choices.
 - The page has image hierarchy, title hierarchy, metadata rhythm, and one interrupting editorial device.

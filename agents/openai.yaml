@@ -1,3 +1,3 @@
-display_name: "Oriental Editorial Poster"
-short_description: "Create refined cultural, fantasy, and minimalist text-material editorial posters from themes, references, or keyword batches."
-default_prompt: "Use this skill to create finished sparse editorial poster images from my keywords or cultural themes, with strong material evidence, restrained typography, and no generic Chinese-style decoration."
+display_name: "Oriental Editorial Poster v2"
+short_description: "Create refined Image 2 cultural typography posters with short Chinese titles, real material evidence, and A/B/C test modes."
+default_prompt: "Use this skill to create finished sparse Chinese editorial poster images from my keywords or cultural themes, with refined titles, real material evidence, restrained typography, and no generic Chinese-style decoration."

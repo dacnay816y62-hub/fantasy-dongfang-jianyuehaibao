@@ -1,8 +1,10 @@
-# Oriental Editorial Poster
+# Oriental Editorial Poster v2
 
 一个面向 Codex 的中文视觉创作 skill，用于生成东方文化、幻想文字、文字创意极简、出版物封面和编辑式海报的创作流程。
 
 它不是“新中式海报”一键提示词，而是一套偏审美判断和构图方法的工作流：先分析主题与材料证据，再选择文字机制、留白比例、版式系统和图像生成方式，尽量避免红章、泼墨、伪古风、小字噪音和通用 AI 海报模板。
+
+v2 版本加入了 Image 2 实测后的规则：标题先精炼、文化靠真实物证承载、A/B/C 三种方向成组评测，并修正了 Mode B 的定义，默认生成完整海报版面，而不是先出空底图再贴字。
 
 ## 适合做什么
 
@@ -21,6 +23,23 @@
 - 中性色为主，只保留一个有效强调色
 - 禁止伪小字、二维码、随机印章、旅游宣传感和无来源的装饰纹理
 
+## v2 测试资产
+
+从原私人测试仓库转移进来的完整 Image 2 测试素材放在 [`v2-tests/`](v2-tests/)。
+
+精选 A/B/C 三联总览：
+
+![v2 selected overview](v2-tests/selected-triptychs/selected-overview.jpg)
+
+精选方向包括：漆影、婚姻、青瓷、盐田、铜脊、苗银、苏州园林、京剧、皮影、藏地文化、北京、大同。
+
+`v2-tests/` 包含：
+
+- `images/`: 原始 Image 2 PNG 出图
+- `prompts/`: 对应 prompt 记录
+- `selected-triptychs/`: 挑选后的 A/B/C 三联对比图
+- `README.md`: 测试集说明和精选列表
+
 ## 目录结构
 
 ```text
@@ -30,6 +49,11 @@ oriental-editorial-poster/
 │  └─ openai.yaml
 ├─ assets/
 │  └─ reference-layouts/
+├─ examples/
+├─ v2-tests/
+│  ├─ images/
+│  ├─ prompts/
+│  └─ selected-triptychs/
 └─ references/
    ├─ editorial-systems.md
    └─ fantasy-text-minimal.md
@@ -87,7 +111,10 @@ $oriental-editorial-poster
   适合短标题、幻想文字、强图文融合、单张创意测试。
 
 - **Mode B：图像生成式海报版面**  
-  适合更稳的出版物封面、多字标题、城市/文化/展览主题。整体仍由图像生成完成，但标题区更清楚、版式更像真实封面。
+  适合更稳的出版物封面、多字标题、城市/文化/展览主题。整体仍由图像生成完成，包括标题位置、图像位置和版式层级；只是标题区更清楚、版式更像真实封面。
+
+- **A/B/C 测试**  
+  适合批量验证。A 是古图档案介入，B 是单一物证，C 是字体结构实验。每个题材三张成组评估，不按孤立单图判断。
 
 如果当前 Codex 环境没有内置图像生成工具，也没有可用 API 后端，这个 skill 只能先产出高质量提示词和构图方案，不能假装已经出图。
 
@@ -109,4 +136,4 @@ $oriental-editorial-poster
 
 - 本仓库不包含 API key、账号信息或图像生成额度。
 - 参考图用于学习视觉语法，不代表可商用授权。
-- 如果要作为公开 skill 分发，建议保留原文件结构，不要把过程稿、生成图片或临时输出放进仓库。
+- `v2-tests/` 是公开测试资产和 prompt 记录，用于说明 v2 的审美收敛过程；正式项目素材仍建议单独保存。

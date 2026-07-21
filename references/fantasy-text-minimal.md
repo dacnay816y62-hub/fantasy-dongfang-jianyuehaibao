@@ -1,8 +1,10 @@
 # Fantasy Text-Minimal Overlay
 
-Use this overlay when the user asks for keyword tests, fast batches, "文字创意极简", "fantasy", or poster outputs similar to the approved examples in `assets/reference-good/`.
+Use this overlay when the user asks for keyword tests, fast batches, ABC comparisons, "文字创意极简", "fantasy", or poster outputs similar to the approved examples in `assets/reference-good/`.
 
 First inspect `assets/reference-good/fantasy-text-minimal-contact-sheet.jpg` when matching taste matters. Load individual images from `assets/reference-good/` only if the contact sheet is not enough.
+
+For the v2 Image 2 direction, inspect `v2-tests/selected-triptychs/selected-overview.jpg` when available. The selected triptychs show the preferred balance: short H1, one material proof, a real cultural carrier, and a readable A/B/C difference.
 
 ## Taste Summary
 
@@ -17,6 +19,8 @@ The approved direction is not generic "Chinese style". It is a refined text-mate
 
 Good evidence examples: wet stone, bronze patina, cracked lacquer, torn paper, silk thread, porcelain fracture, salt grain, pagoda brick, winter lotus fiber, wafer grid, water reflection, city wall, instrument strings, sugar gloss, Taihu stone holes.
 
+Approved v2 evidence examples: lacquer shadow, marriage ring/string, celadon glaze, salt field, bronze ridge, Miao silver, Suzhou garden window, Peking opera costume, shadow puppet leather, Tibetan carved/painted surface, Beijing hutong wall, Datong grotto stone.
+
 ## Fast Batch Defaults
 
 For 1-6 short keywords, proceed without asking:
@@ -27,6 +31,28 @@ For 1-6 short keywords, proceed without asking:
 - text reserve: medium unless the subject clearly needs a quiet catalogue field;
 - image tool priority: prefer the host-native built-in `img` / `image_generation` tool when it is available; use Garden/API generation only when no built-in image tool is exposed;
 - output: save images to `D:\Codex_Outputs\images` and prompts to `D:\Codex_Outputs\drafts`.
+
+## v2 Title Refinement
+
+Before prompting, compress the topic into a stronger visible H1.
+
+- Use 1-4 Chinese characters for the main title whenever possible.
+- Let subtitle, English tag, small copy, and visual evidence carry the full place/craft context.
+- Prefer `天井` over `徽州天井` when Huizhou is visible in the architecture.
+- Prefer `青花瓷` or `青花` over a long `景德镇青花...` construction when porcelain evidence already implies Jingdezhen.
+- Keep `苗银`, `皮影`, `京剧`, `北京`, `大同`, `婚姻`, and `漆影` direct and legible; do not bury them inside poetic compound titles.
+
+Reject long literal H1 strings when a shorter title will read harder and the evidence can do the explaining.
+
+## ABC Comparison Defaults
+
+When the user asks for A/B/C tests:
+
+- `A`: 古图档案介入. Use archival field, rubbing, map, old paper, print, or historical-image logic.
+- `B`: 单一物证. Use one object or material as the visual boss; keep title calmer.
+- `C`: 字体结构实验. Let title become a frame, crop-window, relief, mask, section, or structural interruption.
+
+Keep all three treatments for a topic recognizably related, but make the title action different enough that review is meaningful. After generation, arrange each topic as one triptych with A/B/C labels so the user can judge the group quickly.
 
 ## Composition Card
 
@@ -117,3 +143,6 @@ Never invent real dates, venues, institutions, quotes, collection numbers, artis
 - beautiful object photo with title pasted on top but no relationship;
 - buildings, props, or people shaped as giant Chinese glyphs;
 - generic ink, mist, tourist nostalgia, or cyberpunk wallpaper.
+- invented cultural hybrids, fake traditions, or strange nonexistent subjects;
+- overlong titles that explain the culture instead of letting the evidence show it;
+- reviewing isolated single images when the actual task is an A/B/C group comparison.
