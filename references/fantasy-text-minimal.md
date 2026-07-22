@@ -30,7 +30,7 @@ For 1-6 short keywords, proceed without asking:
 - mode: Mode B-like complete poster layout for multi-character topics, Mode A only when the title is short and the material-title fusion is the point;
 - text reserve: medium unless the subject clearly needs a quiet catalogue field;
 - image tool priority: prefer the host-native built-in `img` / `image_generation` tool when it is available; use Garden/API generation only when no built-in image tool is exposed;
-- output: save images to `D:\Codex_Outputs\images` and prompts to `D:\Codex_Outputs\drafts`.
+- output: save images to the user-configured output root, for example `<OUTPUT_ROOT>\images`; save prompts to `<OUTPUT_ROOT>\drafts`.
 
 ## v2 Title Refinement
 

@@ -69,10 +69,10 @@ oriental-editorial-poster/
 <CODEX_HOME>/skills/oriental-editorial-poster
 ```
 
-如果你不知道 `CODEX_HOME` 在哪里，常见位置是：
+如果你不知道 `CODEX_HOME` 在哪里，常见 Windows 位置可以使用环境变量表达：
 
 ```text
-C:\Users\<你的用户名>\.codex\skills\oriental-editorial-poster
+%USERPROFILE%\.codex\skills\oriental-editorial-poster
 ```
 
 复制后新开一个 Codex 任务，就可以直接调用：
