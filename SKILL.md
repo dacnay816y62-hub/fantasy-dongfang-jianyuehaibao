@@ -20,6 +20,7 @@ When judging taste or running ABC comparisons, inspect `v2-tests/selected-tripty
 These rules supersede earlier broad "fantasy oriental" tendencies.
 
 - Use Image 2 / image generation for actual poster tests; do not stop at prompt writing when the user asks for output images.
+- When the user is testing Chinese text fidelity, asks to fix question marks/typos, or explicitly rejects post-added text, the visible H1 must be generated inside the image model pass. Do not add, replace, or correct the main title later with PIL, SVG, HTML/CSS, Photoshop, or any other layout fallback. If the title is wrong, simplify the prompt/title and regenerate.
 - Prefer real, recognizable cultural evidence over invented cultural mashups: porcelain, silverwork, lacquer, garden windows, opera costume details, shadow puppets, city wall, grotto stone, archive maps, fabric, paper, waterline, patina, or craft marks.
 - Refine the main Chinese title before prompting. The H1 should usually be 1-4 Chinese characters. Carry the longer topic through evidence, subtitle, English tag, or small copy.
 - Do not over-explain with the title. For example, "徽州天井" can become "天井" when Huizhou is visible through architecture; "景德镇青花" should emphasize "青花瓷" or "青花" rather than forcing every proper noun into the H1.
@@ -348,6 +349,7 @@ For **Mode B**, the image-generation step must still produce the finished poster
 
 Use a layout-native method—SVG, HTML/CSS, Photoshop, Figma, or another editable composition tool—only when the user needs exact factual typography, a production-ready file, or corrections after a generated poster exists. This is a finishing fallback, not the default definition of Mode B.
 
+- This fallback is forbidden when the user says the text must be completed inside image generation, when the deliverable is a raw image-generation text-fidelity test, or when the problem being tested is garbled Chinese, question marks, or wrong characters. In those cases, regenerate the poster natively instead of post-correcting the H1.
 - Keep H1, H2, dates, locations, and all supplied text exact in fallback finishing.
 - Use hard crops and deliberate edge pressure; avoid “image left, title right” unless the selected system requires it.
 - Create variation through scale: hero crop, micro-detail, large title, small metadata, and one tiny mark.

@@ -135,6 +135,18 @@ Keep text minimal:
 
 Never invent real dates, venues, institutions, quotes, collection numbers, artist credits, or historical claims.
 
+## Image-Native Text Test Rule
+
+When the user is testing whether the image model can render Chinese text correctly, or says not to add text afterward, the single-image poster must contain only image-native text. Do not repair the H1 with PIL, SVG, HTML/CSS, Photoshop, Figma, or any separate layout pass. If the generated poster has a question mark, wrong character, English replacement, pseudo-label, or garbled small text, mark that image as failed and regenerate with a stricter prompt.
+
+For stricter native-text prompts:
+
+- write the prompt primarily in Chinese;
+- put the exact title requirement first and repeat it once;
+- ask for only one readable main title, for example `画面只允许出现一个中文大标题「苗银」`;
+- forbid all other text, including English, numbers, question marks, seals with characters, labels, captions, QR codes, and fake microtype;
+- reduce title length to 1-3 common Chinese characters when the topic allows it, while letting the object/material evidence carry the fuller cultural context.
+
 ## Common Failures
 
 - fake dense microtype;
