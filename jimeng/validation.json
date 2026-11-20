@@ -1,0 +1,17 @@
+{
+  "name": "东方极简文化海报",
+  "status": "通过",
+  "files": 3,
+  "compressed_bytes": 6453,
+  "expanded_bytes": 10809,
+  "max_folder_depth": 1,
+  "relative_links_verified": 2,
+  "name_characters": 8,
+  "description_characters": 102,
+  "sha256": "a5ac18a7e8ef1dc833dd13bec679cca975b0f0274046b27b1d7146305b787f4b",
+  "archive": "fantasy-dongfang-jianyuehaibao-jimeng-v1.0.0.zip",
+  "extracted_byte_match": true,
+  "basis": "用户提供的《满血版即梦 Skill 创建说明》",
+  "platform_upload_tested": false,
+  "media_generation_tested": false
+}

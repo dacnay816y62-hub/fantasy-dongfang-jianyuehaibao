@@ -1,5 +1,8 @@
 # 东方文化编辑海报
 
+> **即梦版已提供：** [下载即梦技能 ZIP](https://github.com/dacnay816y62-hub/fantasy-dongfang-jianyuehaibao/releases/download/jimeng-v1.0.0/fantasy-dongfang-jianyuehaibao-jimeng-v1.0.0.zip) · [查看即梦版说明](jimeng/README.md)。上传即梦请使用此专用 ZIP；原版技能继续保留。
+
+
 **FANTASY / 梵想美学 · 文化海报与编辑设计**
 
 用真实文化物证、标题动作与留白建立东方编辑海报，支持文字创意与 A/B/C 成组比较。
